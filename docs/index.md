@@ -89,3 +89,26 @@ JS 压缩 内置了 uglifyjs-webpack-plugin 并行压缩
 
 清理dist
 autoprefixer
+
+### 静态资源内联
+
+raw-loader
+
+### 使用sourceMap
+
+通过 source map 定位到源代码
+
+eval: 使用eval包裹模块代码
+source map: 产生.map文件
+cheap: 不包含列信息
+inline: 将.map作为DataURI嵌入，不单独生成.map文件
+module: 包含loader的sourcemap
+
+### 提取页面公共资源
+
+splitChunkPlugin 替换 CommonsChunkPlugin
+
+chunks参数说明：
+
+* async
+* 
