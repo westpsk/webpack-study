@@ -69,4 +69,23 @@ style-loader 将样式通过 `<style>` 标签插入到 head 中
 webpack-dev-server
 
 WDS 不刷新浏览器/不输出文件，放内存里
+使用 HotModuleReplacementPlugin 插件
 
+webpack-dev-middleware
+
+### 文件指纹
+
+Hash
+Chunkhash
+Contenthash
+
+### 代码压缩
+
+HTML 压缩 html-webpack-plugin 设置压缩参数
+CSS 压缩 optimize-css-assets-webpack-plugin & cssnano
+JS 压缩 内置了 uglifyjs-webpack-plugin 并行压缩
+
+### CleanWebpackPlugin
+
+清理dist
+autoprefixer
